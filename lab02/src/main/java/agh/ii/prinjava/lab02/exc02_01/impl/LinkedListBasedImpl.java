@@ -6,12 +6,18 @@ public class LinkedListBasedImpl implements StackOfInts {
 
     @Override
     public int pop() {
-        throw new IllegalStateException("To be implemented");
+        int object = first.elem;
+        first = first.next;
+        numOfElems--;
+        return object;
+
     }
 
     @Override
     public void push(int x) {
-        throw new IllegalStateException("To be implemented");
+       first = new Node(x,first);
+       numOfElems++;
+
     }
 
     @Override
@@ -21,7 +27,7 @@ public class LinkedListBasedImpl implements StackOfInts {
 
     @Override
     public int peek() {
-        throw new IllegalStateException("To be implemented");
+        return first.elem;
     }
 
     private static class Node {

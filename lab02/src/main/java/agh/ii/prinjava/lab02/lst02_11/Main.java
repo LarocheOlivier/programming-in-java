@@ -1,53 +1,5 @@
 package agh.ii.prinjava.lab02.lst02_11;
 
-/**
- * <ul>
- *     <li>In functional languages, a lambda expression is a convenient way to create an anonymous
- *         (i.e. not named) function</li>
- *     <li>Since in Java we have only methods (i.e., member functions of interfaces or classes),
- *         a lambda expression is just a convenient way (syntactic sugar) to create
- *         an instance of an anonymous class that implements a functional interface</li>
- * </ul>
- *
- * @since Java 8
- */
-@FunctionalInterface
-interface I1 {
-    void apply();
-}
-
-/**
- * function: (int) -> void
- */
-@FunctionalInterface
-interface I2 {
-    void apply(int x);
-}
-
-/**
- * function: (int) -> int
- */
-@FunctionalInterface
-interface I3 {
-    int apply(int x);
-}
-
-/**
- * function: (int, int) -> void
- */
-@FunctionalInterface
-interface I4 {
-    void apply(int x, int y);
-}
-
-/**
- * function: (int, int) -> int
- */
-@FunctionalInterface
-interface I5 {
-    int apply(int x, int y);
-}
-
 public class Main {
     private static void demo1() {
         System.out.println("demo1...");
